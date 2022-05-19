@@ -1,5 +1,5 @@
 import React from 'react';
-import reactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
 
 //redux-related imports
@@ -22,8 +22,12 @@ resetStore()
 
 
 ReactDOM.render(
+
   <Provider store ={store}>
+
+    <Router>
       <App />
+      </Router>
   </Provider>,
   document.getElementById('root')
 );
